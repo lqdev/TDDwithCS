@@ -1,0 +1,8 @@
+/media/lqdev/Files/Development/DOTNET/TDDwithCS/ChapterOneExample/ChapterOneExample.Utilities/bin/Debug/netstandard2.0/ChapterOneExample.Utilities.deps.json
+/media/lqdev/Files/Development/DOTNET/TDDwithCS/ChapterOneExample/ChapterOneExample.Utilities/bin/Debug/netstandard2.0/ChapterOneExample.Utilities.dll
+/media/lqdev/Files/Development/DOTNET/TDDwithCS/ChapterOneExample/ChapterOneExample.Utilities/bin/Debug/netstandard2.0/ChapterOneExample.Utilities.pdb
+/media/lqdev/Files/Development/DOTNET/TDDwithCS/ChapterOneExample/ChapterOneExample.Utilities/obj/Debug/netstandard2.0/ChapterOneExample.Utilities.csproj.CoreCompileInputs.cache
+/media/lqdev/Files/Development/DOTNET/TDDwithCS/ChapterOneExample/ChapterOneExample.Utilities/obj/Debug/netstandard2.0/ChapterOneExample.Utilities.AssemblyInfoInputs.cache
+/media/lqdev/Files/Development/DOTNET/TDDwithCS/ChapterOneExample/ChapterOneExample.Utilities/obj/Debug/netstandard2.0/ChapterOneExample.Utilities.AssemblyInfo.cs
+/media/lqdev/Files/Development/DOTNET/TDDwithCS/ChapterOneExample/ChapterOneExample.Utilities/obj/Debug/netstandard2.0/ChapterOneExample.Utilities.dll
+/media/lqdev/Files/Development/DOTNET/TDDwithCS/ChapterOneExample/ChapterOneExample.Utilities/obj/Debug/netstandard2.0/ChapterOneExample.Utilities.pdb
