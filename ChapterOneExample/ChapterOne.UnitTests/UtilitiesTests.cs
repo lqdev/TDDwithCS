@@ -1,13 +1,15 @@
 using System;
-using Xunit;
+//using Xunit;
+using NUnit.Framework;
 using ChapterOneExamples.Utilities;
 
 namespace ChapterOne.UnitTests
 {
+    [TestFixture]
     public class UtilitiesTests
     {
         
-        [Fact]
+        [Test]
         public void ShouldFindOneYInMysterious()
         {
             var stringToCheck = "mysterious";
@@ -16,10 +18,10 @@ namespace ChapterOne.UnitTests
             var classUnderTest = new StringUtilities();
             var actualResult = classUnderTest.CountOccurrences(stringToCheck,stringToFind);
 
-            Assert.Equal(expectedResult, actualResult);
+            Assert.AreEqual(expectedResult, actualResult);
         }
 
-        [Fact]
+        [Test]
         public void ShouldFindTwoSInMysterious()
         {
             var stringToCheck = "mysterious";
@@ -28,10 +30,10 @@ namespace ChapterOne.UnitTests
             var classUnderTest = new StringUtilities();
             var actualResult = classUnderTest.CountOccurrences(stringToCheck,stringToFind);
 
-            Assert.Equal(expectedResult, actualResult);
+            Assert.AreEqual(expectedResult, actualResult);
         }
 
-        [Fact]
+        [Test]
         public void ShouldBeCaseSensitive()
         {
             var stringToCheck = "mySterious";
@@ -40,10 +42,10 @@ namespace ChapterOne.UnitTests
             var classUnderTest = new StringUtilities();
             var actualResult = classUnderTest.CountOccurrences(stringToCheck,stringToFind);
 
-            Assert.Equal(expectedResult, actualResult);            
+            Assert.AreEqual(expectedResult, actualResult);            
         }
 
-        [Fact]
+        [Test]
         public void ShouldBeAbleToHandleNulls()
         {
             string stringToCheck = null;
@@ -52,19 +54,17 @@ namespace ChapterOne.UnitTests
             var classUnderTest = new StringUtilities();
             var actualResult = classUnderTest.CountOccurrences(stringToCheck,stringToFind);
 
-            Assert.Equal(expectedResult, actualResult);            
+            Assert.AreEqual(expectedResult, actualResult);            
         }
         
-
-        [Theory]
-        [InlineData("mysterious","y",1)]
-        [InlineData("mysterious","s",2)]
-        [InlineData("mySterious","s",2)]
-        [InlineData(null,"y",-1)]
+        [TestCase("mysterious","y",1)]
+        [TestCase("mysterious","s",2)]
+        [TestCase("mySterious","s",2)]
+        [TestCase(null,"y",-1)]
         public void runAllTests(string stringToCheck, string stringToFind, int expectedResult)
         {
             var actualResult = new StringUtilities().CountOccurrences(stringToCheck,stringToFind);
-            Assert.Equal(expectedResult,actualResult);
+            Assert.AreEqual(expectedResult,actualResult);
         }
     }
 }
